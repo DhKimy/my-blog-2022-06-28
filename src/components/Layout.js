@@ -12,13 +12,14 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 
 function Layout({ pageTitle, children }) {
     const data = useStaticQuery(graphql`
+
         query {
-        site {
+            site {
             siteMetadata {
-            title
-            description
+                title
+                description
             }
-        }
+            }
         }
     `);
 

@@ -24,9 +24,9 @@ import {useStaticQuery, graphql} from 'gatsby';
      <Layout pageTitle="My Blog Posts">
        {data.allMdx.nodes.map((node) => (
          <article key={node.id}>
-           <h2>{node.frontmatter.title}</h2>
-           <p>Posted: {node.frontmatter.date}</p>
-           <MDXRenderer>{node.body}</MDXRenderer>
+          <h2>{node.frontmatter.title}</h2>
+          <p>Posted: {node.frontmatter.date}</p>
+          <MDXRenderer>{node.body}</MDXRenderer>
          </article>
        ))}
      </Layout>
